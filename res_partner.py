@@ -21,6 +21,11 @@
 ##############################################################################
 from openerp import fields,models
     
+class res_partner(models.Model):
+    _inherit = 'res.partner'
+    
+    name = fields.Char(string="Name", required=True, select=True, translate=True)
+
 class res_company(models.Model):
     _inherit = 'res.company'    
     

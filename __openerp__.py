@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    @package t_to_website_filter TO Compnay Name Translation for Odoo 8.0
+#    @package t_to_website_filter TO Partner Name Translation for Odoo 8.0
 #    @copyright Copyright (C) 2015 T.V.T Marine Automation (aka TVTMA). All rights reserved.#
 #    @license http://www.gnu.org/licenses GNU Affero General Public License version 3 or later; see LICENSE.txt
 #
@@ -20,17 +20,17 @@
 #
 ##############################################################################
 {
-    'name' : 'TO Company Name Translation',
+    'name' : 'TO Partner Name Translation',
     'version': '1.0.0',
     'author' : 'T.V.T Marine Automation (aka TVTMA)',
     'website': 'http://ma.tvtmarine.com',
-    'summary': 'Translate Company Name',
+    'summary': 'Translate Partner Name',
     'sequence': 30,
     'category': 'Hidden',
     'description':"""
-Company Name Translation
+Partner Name Translation
 ========================
-This module allow user translate company name
+This module allow user translate partner name
     """,
     'depends': ['base'],
     'data': [
