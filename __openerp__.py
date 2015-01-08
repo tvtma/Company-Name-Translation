@@ -20,7 +20,7 @@
 #
 ##############################################################################
 {
-    'name' : 'TO Partner Name Translation',
+    'name' : 'TO Partner Translation',
     'version': '1.0.0',
     'author' : 'T.V.T Marine Automation (aka TVTMA)',
     'website': 'http://ma.tvtmarine.com',

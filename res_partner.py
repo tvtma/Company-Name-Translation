@@ -21,10 +21,35 @@
 ##############################################################################
 from openerp import fields,models
     
+class res_bank(models.Model):
+    _inherit = 'res.bank'
+    
+    name = fields.Char(string="Name", required=True, translate=True)
+    street = fields.Char(string="Street", translate=True)
+    street2 = fields.Char(string="Street2", translate=True)
+    city = fields.Char(string="city", translate=True)
+    
+class res_partner_bank(models.Model):
+    _inherit = 'res.partner.bank'
+    
+    bank_name = fields.Char(string="Bank Name", translate=True)
+    owner_name = fields.Char(string="Account Owner Name", translate=True)
+    street = fields.Char(string="Street", translate=True)
+    city = fields.Char(string="city", translate=True)  
+
+class res_country_state(models.Model):
+    _inherit = 'res.country.state'
+    
+    name = fields.Char(string="Name", required=True, translate=True,
+        help='Administrative divisions of a country. E.g. Fed. State, Departement, Canton')
+
 class res_partner(models.Model):
     _inherit = 'res.partner'
     
     name = fields.Char(string="Name", required=True, select=True, translate=True)
+    street = fields.Char(string="Street", translate=True)
+    street2 = fields.Char(string="Street2", translate=True)
+    city = fields.Char(string="city", translate=True)
 
 class res_company(models.Model):
     _inherit = 'res.company'    
