@@ -1,2 +1,2 @@
-# Company-Name-Translation
-to_company_name_translation
+# Company Name Translation
+This module allow user translate company name
